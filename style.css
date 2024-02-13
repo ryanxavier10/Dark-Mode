@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    transition: .5s;
+}
+
+header{
+    background-color: #100e0e;
+}
+
+h1{
+    color: rgb(157, 1, 1);
+    font-family: 'Bungee', cursive;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-item{
+    margin: 0 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    color: rgb(157, 1, 1);
+}
+
+.nav-item:hover.dark{
+    color: #192A56;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 400;
+}
+
+.trilho {
+    width: 80px;
+    height: 40px;
+    background-color: #4d4d4d;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.trilho .indicador{
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark{
+    background-color: #c3c3c3;
+}
+
+.trilho.dark .indicador{
+    left: 40px;
+    background-color: #fff;
+}
+
+header.dark{
+    background-color: #ededed;
+}
+
+header.dark h1{
+    color: #192A56;
+}
+
+header.dark .nav-item{
+    color: #000;
+}
+
+#carrosel-imagens img{
+    height: 500px;
+    width: 100vw;
+}
+
+section .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.container > img{
+    height: 300px;
+    width: 300px;
+}
+
+.brand-list img{
+    height: 24px;
+    margin-right: 8px;
+}
+
+.brand-list li{
+    display: inline;
+}
+
+section{
+    padding: 40px 20px;
+    background-color: #100e0e;
+}
+
+section h2{
+    margin-bottom: 16px;
+    font-family: 'Bungee', cursive;
+    font-weight: bold;
+    color: rgb(157, 1, 1);
+}
+
+section p{
+    margin-bottom: 8px;
+    color: #c3c3c3;
+}
+
+section.dark{
+    background-color: #ededed;
+}
+
+section.dark h2{
+    color: #192A56;
+}
+
+section.dark p{
+    color: #000;
+}
+
+#carrosel-imagens.dark{
+    border-top: 8px solid #000;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between; /* Para distribuir os espaços igualmente entre os cards */
+}
+
+.card{
+    background-color: #000;
+    width: 180px;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #f72f2f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    margin: 40px 80px;
+    text-align: center;
+}
+
+
+.card img {
+    width: 100%;
+    height: 130px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card h1{
+    font-size: 1.2rem;
+    color: rgb(157, 1, 1);
+}
+
+.card h2{
+    font-size: .9rem;
+    color: #aaa;
+}
+
+.card span{
+    color: #fff;
+    font-weight: bold;
+}
+
+.descricao {
+    text-align: center;
+}
+
+.descricao h1{
+    margin: 2px 0px;
+}
+
+.card button{
+    background: transparent;
+    height: 30px;
+    border: 2px solid rgb(157, 1, 1);
+    padding: 4px;
+    width: 80%;
+    color: rgb(157, 1, 1);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.card button:hover{
+    box-shadow: 0px 0px 10px 8px rgb(157, 1, 1),
+    inset 0px 0px 10px 2px;
+
+    transform: scale(1.05);
+}
+
+.cards-container.dark .card{
+    background-color: #fff;
+    box-shadow: 4px 4px 12px darkblue;
+    color: #000;
+}
+
+.cards-container.dark span{
+    color: #000;
+}
+
+.cards-container.dark .card h1{
+    color: #192A56;
+}
+
+.cards-container.dark .card h2{
+    color: #000;
+}
+
+.cards-container.dark .card button{
+    border: 2px solid #192A56;
+    color: #192A56;
+}
+
+.cards-container.dark .card button:hover{
+    box-shadow: 0px 0px 10px 8px #3a3095,
+    inset 0px 0px 10px 2px;
+    transform: scale(1.05);
+}
+
+
+section .comunicado h1{
+    text-align: center;
+}
+
+section .comunicado p{
+    text-align: center;
+    margin: 10px;
+}
+
+.atencao.dark{
+    background-color: #ededed;
+}
+
+.comunicado.dark{
+    background-color: #ededed;
+}
+
+.comunicado.dark h1{
+    color: #192A56;
+}
+
+.comunicado.dark p{
+    color: #000;
+}
+
+footer{
+    background-color: rgb(157, 1, 1);
+    padding-top: 16px ;
+    color: #fff;
+    text-align: center;
+}
+
+footer > .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px ;
+}
+
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center; /* Adicionamos isso para centralizar horizontalmente os ícones */
+    align-items: center;
+}
+
+.icons-list {
+    display: flex;
+    align-items: center;
+    margin-left: 16px; /* Espaço entre o texto e os ícones */
+}
+
+.icons-list li {
+    margin-left: 16px;
+}
+
+.icons-list li:first-child {
+    margin-left: 0;
+}
+
+.icons-list img {
+    height: 32px;
+}
+
+footer.dark{
+    background-color: #192A56;
+}
+
